@@ -1,101 +1,94 @@
-/* 
-https://www.iconfinder.com/icons/1243689/call_phone_icon
-Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/Makoto_msk */
-
 export const storeProducts = [
   {
     id: 1,
-    title: "Google Pixel - Black",
-    img: "img/product-1.png",
+    title: 'Heroes',
+    img: 'img/album.png',
     price: 10,
-    company: "GOOGLE",
+    company: 'NAMELESS',
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      'rubber cement algorithms Innovators Dilemma every dog loves food discuss Flipboard curmudgeon afternoon paper content farm Foursquare, WSJ analytics TechCrunch iPad app we will make them pay we need a Nate Silver net neutrality incent experiment metered model, going forward Flipboard I love the Weather & Opera section information.',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 2,
-    title: "Samsung S7",
-    img: "img/product-2.png",
-    price: 16,
-    company: "SAMSUNG",
+    title: 'Never Ending EP',
+    img: 'img/album-2.png',
+    price: 10,
+    company: 'Jim Henderson',
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      'Jim Hendersons first release is a statement. This Never Ending  EP is one coherent and captivating story, recreating atmospheres that could only appear in your dreams. Jim delivers in building tension without losing focus and keeping you immersed in his wonderful fictional world of Elves and Dark Angels',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 3,
-    title: "HTC 10 - Black",
-    img: "img/product-3.png",
+    title: "Let's Vibrate Together",
+    img: 'img/album-3.png',
     price: 8,
-    company: "htc",
+    company: 'My Panda Shall Fly & Benjamin Jackson',
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      'This is a 1 off collaborative EP between sonic wizard My Panda Shall Fly and analogue disciple Benjamin Jackson. MPSF has been on the scene a while, with releases on Dam Mantles Growing records & Wichita. Benjamin Jackson is a relative newcomer, having only self-released last year through his own label, Thanqu. The pair recorded the bulk of the EP collaboratively without ever having met. The EP is rounded off by remixes from My Panda Shall Fly material is groundbreaking - CLASH MUSIC',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 4,
-    title: "HTC 10 - White",
-    img: "img/product-4.png",
-    price: 18,
-    company: "htc",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    title: 'Craving for change',
+    img: 'img/album-4.png',
+    price: 8,
+    company: 'The Boring',
+    info:'Farce Attack Records, Stupid Kids Records, Crapoulet Records, Oni Red Chords, Back To Reality Records, Dingleberry Records, Chanmax Records, Dream Come True, Fouic Fouic Crew, Stupid Kids Records, Famed Records, Back To Reality Records, Blood & Döner Records, No Routine Records, Histrion, Kanal Hysterik, Monkey Cookie Records, Orchid Scent, Saddest Song Records.Transparent red vinyl, with CD included!',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 5,
-    title: "HTC Desire 626s",
-    img: "img/product-5.png",
-    price: 24,
-    company: "htc",
+    title: 'Deep Space Orchestra',
+    img: 'img/album-5.png',
+    price: 14,
+    company: 'Alex Sullivan',
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      'Having just released their latest EP on Quintessentials, UK duo Deep Space Orchestras latest offering entitled ‘Bucktown Fever’ EP is a beautiful slice of intelligent deep house. Chris Barker & Si Murray take warm analogue elements and organic sounds to make sumptuous tracks for the likes of Delusions Of Grandeur and Drumpoet Community. The pair rework their influences from jazz, disco and even early drum & bass to make emotive disco-infused house sounds.',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 6,
-    title: "Vintage Iphone",
-    img: "img/product-6.png",
-    price: 17,
-    company: "apple",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    title: 'Changes ',
+    img: 'img/album-6.png',
+    price: 13,
+    company: 'Intoccabile',
+    info:'Satoshi Nakamoto launched lots of decentralisation when Litecoin required many decentralised application, for Augur limited some public key behind lots of multi signature. Blockchain thought some robust smart contract in a algorithm! Since OmiseGo bought few double spend, Augur could be many algo-traded vaporware, but Decred data mining few trusted hard fork!',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 7,
-    title: "Iphone 7",
-    img: "img/product-7.png",
-    price: 30,
-    company: "apple",
+    title: 'Dark Side Of The Moon ',
+    img: 'img/pink-floyd.png',
+    price: 8,
+    company: 'pink floyd ',
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      'The Dark Side of the Moon is the eighth studio album by English rock band Pink Floyd, released on 1 March 1973 by Harvest Records. Primarily developed during live performances, the band premiered an early version of the record several months before recording began. New material was recorded in two sessions in 1972 and 1973 at Abbey Road Studios in London.',
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 8,
-    title: "Smashed Iphone",
-    img: "img/product-8.png",
-    price: 2,
-    company: "apple",
+    title: 'Blonde',
+    img: 'img/album-8.jpg',
+    price: 12,
+    company: 'Coeur de pirate ',
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      'The album opens with "Lève les voiles", which roughly translates to "Raise the Sails" or "Set Sail", an a cappella song written in a traditional style. Though the words and melody were written by Martin, she does not sing on the track, which features instead singers from the boys choir Les Petits Chanteurs de Laval (Young Singers of Laval) and the girls choir Les Voix Boréales (Boreal Voices), directed by Philippe Ostiguy',
     inCart: false,
     count: 0,
     total: 0
@@ -104,12 +97,12 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-  title: "Google Pixel - Black",
-  img: "img/product-1.png",
+  title: 'Heroes',
+  img: 'img/album.png',
   price: 10,
-  company: "google",
+  company: 'NAMELESS',
   info:
-    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+  'rubber cement algorithms Innovators Dilemma every dog loves food discuss Flipboard curmudgeon afternoon paper content farm Foursquare, WSJ analytics TechCrunch iPad app we will make them pay we need a Nate Silver net neutrality incent experiment metered model, going forward Flipboard I love the Weather & Opera section information.',
   inCart: false,
   count: 0,
   total: 0

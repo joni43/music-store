@@ -4,14 +4,25 @@
   --mainWhite:#f3f3f3;
   --mainDark:#232528;
   --mainYellow:#ffa400;
+  --mainSeaShell:seashell;
 }
-
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 body {
+  
+  
   font-family: "Oswald",sans-serif !important;
   background: var(--mainWhite) !important;
   color:var(--mainDark) !important;
+  margin: 0;
+  padding: 0;
+ 
 }
-
+.cart-link {
+  color:var(--mainSeaShell)
+}
 .text-title {
   font-family: "Permanent Marker", cursive;
   letter-spacing: 0.3rem;
@@ -44,3 +55,15 @@ body {
   font-size: 1.2rem;
   color:var(--mainYellow);
 }
+
+.hero-container {
+  background-image: url('./assets/store-2.png');
+  /* Full height */
+  height: 81.1vh; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

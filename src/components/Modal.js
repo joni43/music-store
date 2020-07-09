@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { ProductConsumer } from '../context';
 import { ButtonContainer } from './styled/Button';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 export const Modal = (props) => {
     return (
         <ProductConsumer>
@@ -20,32 +20,30 @@ export const Modal = (props) => {
                                 <div className="row">
                                     <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize">
                                         <h5>Item added to the cart</h5>
-                                        <img src={img} className="img-fluid" alt="product"></img>
+                                        <img src={ img } className="img-fluid" alt="product"></img>
                                         <h5>{title}</h5>
                                         <h5 className="text-muted">price :$ {price}</h5>
-                                        <Link to='/'>
-                                            <ButtonContainer onClick={() => closeModal()}>
+                                        <Link to='/products'>
+                                            <ButtonContainer onClick={ () => closeModal() }>
                                                 store
-                                        </ButtonContainer>
+                                            </ButtonContainer>
                                         </Link>
                                         <Link to='/cart'>
-                                            <ButtonContainer cart onClick={() => closeModal()}>
+                                            <ButtonContainer cart onClick={ () => closeModal() }>
                                                 go to cart
-                                        </ButtonContainer>
+                                            </ButtonContainer>
                                         </Link>
                                     </div>
                                 </div>
                             </div>
                         </ModalContainer>
-                    )
+                    );
                 }
-
 
             }}
         </ProductConsumer>
     );
 };
-
 
 const ModalContainer = styled.div`
 position:fixed;
@@ -60,4 +58,4 @@ justify-content:center;
 #modal {
     background:var(--mainWhite);
 }
-`
+`;

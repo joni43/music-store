@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-export const CartTotals = ({ value }) => {
+import { PaypalButton } from './PaypalButton'
+export const CartTotals = ({ value, history }) => {
     const { cartSubTotal, cartTax, cartTotal, clearCart } = value
 
     return (
@@ -8,7 +9,7 @@ export const CartTotals = ({ value }) => {
             <div className="container">
                 <div className="row">
                     <div className="col-10 mt-2 ml-sm-5 ml-md-auto col-sm-8 text-capitalize text-right">
-                        <Link to="/">
+                        <Link to="/products">
                             <button
                                 className="btn btn-outline-danger text-uppercase mb-3 px-5"
                                 type="button"
@@ -29,6 +30,7 @@ export const CartTotals = ({ value }) => {
                             <span className="text-title">total :</span>
                             <strong>$ {cartTotal}</strong>
                         </h5>
+                        <PaypalButton total={cartTotal} clearCart={clearCart} history={history} />
                     </div>
                 </div>
             </div>

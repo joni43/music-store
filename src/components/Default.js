@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 export const Default = (props) => {
     return (
@@ -16,5 +16,5 @@ export const Default = (props) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};

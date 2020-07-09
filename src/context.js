@@ -1,14 +1,13 @@
-import React, { useState, useEffect, useReducer } from 'react'
-import { detailProduct } from './data'
-import { providerReducer } from './reducers.js/reducer'
-const ProductContext = React.createContext()
-
-
+import React, { createContext, useState, useEffect, useReducer,useCallback } from 'react';
+import { detailProduct } from './data';
+import { providerReducer } from './reducers.js/reducer';
+const ProductContext = createContext();
 
 const ProductProvider = (props) => {
     // Component state
-    const [modalOpen, SetModalOpen] = useState(false)
-    const [ProductState, dispatch] = useReducer(providerReducer, {
+    
+    const [ modalOpen, SetModalOpen ] = useState(false);
+    const [ ProductState, dispatch ] = useReducer(providerReducer, {
         products: [],
         detailPrdc: detailProduct,
         cart: [],
@@ -16,83 +15,80 @@ const ProductProvider = (props) => {
         cartSubTotal: 0,
         cartTax: 0,
         cartTotal: 0
-    })
-
+    });
 
     // methods
     const getItem = (id) => {
+
         dispatch({ type: 'GET_ITEM', id, ProductState });
-    }
+    };
 
     const handleDetail = (id) => {
+        
         const product = getItem(id);
         dispatch({ type: 'HANDLE_DETAIL', detailPrdc: product });
-    }
-
-
+    };
+    const addTotals = (id) => {
+        dispatch({ type: 'ADD_TO_TOTALS', ProductState, });
+    };
     const addToCart = (id) => {
-        dispatch({ type: 'ADD_TO_CART', ProductState, id })
-        addTotals()
-    }
+        dispatch({ type: 'ADD_TO_CART', ProductState, id });
+        addTotals();
+    };
 
-
-    const setProducts = () => {
+    const setProducts = useCallback(() => {
         dispatch({ type: 'ADD_PRODUCTS', ProductState });
-    }
+    },[ ProductState ]);
 
     const openModal = (id) => {
         dispatch({ type: 'OPEN_MODAL', id, });
-        SetModalOpen(true)
-    }
+        SetModalOpen(true);
+    };
 
     const closeModal = id => {
         SetModalOpen(false);
     };
 
-
     const increment = id => {
-        let incramentCart = [...ProductState.cart];
+        const incramentCart = [ ...ProductState.cart ];
 
         const decrementProduct = incramentCart.find(item => item.id === id);
         const incramentIndex = incramentCart.indexOf(decrementProduct);
-        const incProduct = incramentCart[incramentIndex];
+        const incProduct = incramentCart[ incramentIndex ];
 
-        dispatch({ type: 'INCREMENT', id, incProduct, incramentCart })
-        addTotals()
+        dispatch({ type: 'INCREMENT', id, incProduct, incramentCart });
+        addTotals();
 
-    }
+    };
     const decrement = id => {
-        let decramentCart = [...ProductState.cart];
+        const decramentCart = [ ...ProductState.cart ];
 
         const decrementProduct = decramentCart.find(item => item.id === id);
         const decramentIndex = decramentCart.indexOf(decrementProduct);
-        const decProduct = decramentCart[decramentIndex];
+        const decProduct = decramentCart[ decramentIndex ];
 
-        dispatch({ type: 'DECREMENT', id, decProduct, decramentCart, removeItem })
-        addTotals()
+        dispatch({ type: 'DECREMENT', id, decProduct, decramentCart, removeItem });
+        addTotals();
 
-    }
+    };
     const removeItem = (id) => {
-        dispatch({ type: 'REMOVE_ITEM', id })
-        addTotals()
-    }
+        dispatch({ type: 'REMOVE_ITEM', id });
+        addTotals();
+    };
     const clearCart = () => {
-        dispatch({ type: 'CLEAR_CART', })
-        setProducts()
-        addTotals()
+        dispatch({ type: 'CLEAR_CART', });
+        setProducts();
+        addTotals();
 
-    }
-    const addTotals = (id) => {
-        dispatch({ type: 'ADD_TO_TOTALS', ProductState, })
-    }
+    };
 
     useEffect(() => {
-
-        setProducts()
-    }, [])
+        
+        setProducts();
+    }, []);
 
     return (
-        <ProductContext.Provider value={{
+        <ProductContext.Provider value={ {
             ...ProductState,
             modalOpen,
             handleDetail: handleDetail,
@@ -104,13 +100,13 @@ const ProductProvider = (props) => {
             removeItem: removeItem,
             clearCart: clearCart
 
-        }}>
+        } }>
 
             {props.children}
         </ProductContext.Provider>
-    )
-}
+    );
+};
 
 const ProductConsumer = ProductContext.Consumer;
 
-export { ProductProvider, ProductConsumer }
+export { ProductProvider, ProductConsumer };
